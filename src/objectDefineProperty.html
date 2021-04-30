@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello</h1>
+</body>
+<script>
+    "use strict";
+    const object1 = {};
+
+    Object.defineProperty(object1, 'property1', {
+        configurable: true,
+        // value: 42,
+        // writable: true,
+        a : 0,
+        enumerable : true,
+        get: function () {
+            console.log("=============")
+            return this.a
+        },
+        set:function(v) {
+            console.log("---------", v)
+            this.a = v
+        }
+
+    });
+    object1.property1 = 77;
+    console.log("1111" ,object1.property1)
+    // delete object1.property1
+
+    console.log(object1.property1)
+    // throws an error in strict mode
+</script>
+</html>
