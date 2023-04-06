@@ -18,6 +18,31 @@ export default {
       console.log("image click.......")
     }
   },
+
+  beforeCreate() {
+    console.log("app before create ")
+  },
+  created() {
+    console.log(" app created ")
+  },
+  beforeMount() {
+    console.log(" app before Mount  ")
+  },
+  mounted() {
+    console.log(" app mounted ")
+  },
+  beforeUpdate() {
+    console.log(" app before Update  ")
+  },
+  updated() {
+    console.log(" app updated ")
+  },
+  beforeDestroy() {
+    console.log(" app before Destroy  ")
+  },
+  destroyed() {
+    console.log(" app destroyed ")
+  }
 }
 </script>
 

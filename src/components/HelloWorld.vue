@@ -23,7 +23,11 @@ export default {
   data() {
     return {
       value: 1,
-      aa: "a"
+      aa: "a",
+      c: {
+        d: 1,
+        e: 2
+      }
     }
   },
   beforeCreate() {

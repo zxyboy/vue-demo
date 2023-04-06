@@ -9,6 +9,30 @@ Vue.config.productionTip = false
 // });
 
 let vue = new Vue({
-  render: h => h(App)
+    render: h => h(App),
+    el: "#app",
+    beforeCreate() {
+        console.log("main before create ")
+    },
+    created() {
+        console.log(" main created ")
+    },
+    beforeMount() {
+        console.log(" main before Mount  ")
+    },
+    mounted() {
+        console.log(" main mounted ")
+    },
+    beforeUpdate() {
+        console.log(" main before Update  ")
+    },
+    updated() {
+        console.log(" main updated ")
+    },
+    beforeDestroy() {
+        console.log(" main before Destroy  ")
+    },
+    destroyed() {
+        console.log(" main destroyed ")
+    }
 })
-vue.$mount('#app')
