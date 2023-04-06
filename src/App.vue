@@ -18,7 +18,6 @@ export default {
       console.log("image click.......")
     }
   },
-
   beforeCreate() {
     console.log("app before create ")
   },

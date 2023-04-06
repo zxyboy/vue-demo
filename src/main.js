@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 //   render: h => h(App)
 // });
 
-let vue = new Vue({
+ new Vue({
     render: h => h(App),
     el: "#app",
     beforeCreate() {
